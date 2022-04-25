@@ -41,7 +41,7 @@ jobs:
     - name: Deploy to Heroku
       env:
         HEROKU API_TOKEN: ${{ secrets.HEROKU_API_TOKEN }}
-        HEROKU APP_NAME: ${{ secrets.HEROKU APP NAME }}
+        HEROKU APP_NAME: ${{ secrets.HEROKU_APP_NAME }}
         if: github.ref == 'refs/heads/master' && job.status == 'success' 
       run: |
         git remote add heroku https://heroku:SHEROKU API TOKEN@git.heroku.com/SHEROKU_APP_NAME.git
